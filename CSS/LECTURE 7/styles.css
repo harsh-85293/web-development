@@ -1,0 +1,31 @@
+.container{
+    height:700px;
+    width: 500px;
+    background-color: green;
+    border: 3px solid red;
+    display: flex;
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+    border: 2px orange;
+    background-color: aqua;
+    /* transition: 2s; */
+    /* bad practise below line*/
+    /* transition-property:background-color;
+    transition-delay: 5s; */
+    transition: transform 5s ease-in ;
+    transition: transform 3s ease-out ;
+    transition: transform 3s linear;
+
+}
+     
+    /* delay->1s and 5s is transition time which is time to move from one color to another coloe    */
+
+
+.box:hover{
+    background-color: brown;
+    transform: scale(2) translateX(500px) rotate(360deg);
+}

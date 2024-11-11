@@ -1,0 +1,30 @@
+.translated {
+    transform: perspective(15px) translateZ(-10px);
+}
+
+perspective(15px): This defines a perspective of 15px, meaning objects appear to have
+depth, and the further an element is along the Z-axis, the more dramatically it will 
+scale (as if you’re looking at it in 3D space). A smaller perspective value creates
+a stronger depth effect.
+
+translateZ(-10px): This moves the div 10px into the screen (negative Z-axis), making it
+appear smaller as it moves away from the viewer.
+
+.scaled {
+    transform: perspective(350px) scaleZ(6) rotateX(45deg) rotateY(30deg) rotateZ(15deg);
+}
+
+perspective(350px): This sets a much larger perspective of 350px, meaning the 3D effect
+is less exaggerated than the .translated class. Objects appear more natural and further
+away.
+scaleZ(6): This scales the element along the Z-axis by a factor of 6, making it appear as
+if it is larger or stretched out along the Z-axis (depth).
+
+rotateX(45deg): Rotates the element 45 degrees around the X-axis (horizontal axis). This
+gives a tilted appearance as if you’re looking at the element from above or below.
+
+rotateY(30deg): Rotates the element 30 degrees around the Y-axis (vertical axis), which
+tilts the element left or right.
+
+rotateZ(15deg): Rotates the element 15 degrees around the Z-axis (the axis that comes out
+of the screen), causing a slight clockwise rotation.

@@ -1,0 +1,23 @@
+If uncommented, it would set the position of all <p> tags to static, which is the default.
+ Static positioning means the element will flow naturally in the document layout, without
+any special positioning behavior.
+
+position: absolute;: The element with the ID box3 is absolutely positioned. This means it
+is removed from the normal document flow and placed relative to its nearest positioned
+ancestor (if there is one) or relative to the browser window.
+
+top: 100px; left: 50px;: The top-left corner of box3 will be positioned 100px from the top
+and 50px from the left of its containing element (or the viewport if no positioned parent
+is present).
+
+If uncommented, it would position the #box1 element fixed relative to the viewport,
+meaning it would stay in the same position even if the user scrolls.
+
+position: sticky;: The element #box4 will behave like a relatively positioned element
+until the page is scrolled, at which point it will "stick" to the top of the container
+(or viewport) as soon as it reaches the top: 0px position.
+
+top: 0px;: This makes the element sticky when the user scrolls, and it will stick to the
+top of the screen (or its container) when scrolling down.
+
+(100vw means 100% of the browser window's width).
